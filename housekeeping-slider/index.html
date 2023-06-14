@@ -8,9 +8,18 @@
   
  * {box-sizing: border-box;}
 
+.container {
+
+	 }	 
+	
+.center {
+	width: 50%;
+	margin: auto;
+	 }	 
+	 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 500px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -30,12 +39,19 @@
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
+  
   width: 40px;
   height: 40px;
-  background-color: #2196F3;
-  opacity: 0.7;
+  background-color: #cc0033;
+  opacity: 1;
   border-radius: 50%;
 }
+	 
+.img-comp-slider:after {
+  content: '\276F';
+  color: white;
+  padding: 20px 20px 20px 20px;
+	 }
   
   </style> 	
 	
@@ -122,18 +138,19 @@
 </head>
 
 <body>
-  
+ <div class="container center">   
   
 	<div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/6tifj9wj735z-FabShopBay.jpg" width="300" height="200">
+    <img src="https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/6tifj9wj735z-FabShopBay.jpg"  width="750" height="500">
   </div>
   <div class="img-comp-img img-comp-overlay">
-    <img src="https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/2uzgvu618qxw-FabShopBay-Clutter.jpg" width="300" height="200">
+    <img src="https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_1400/v1/course-uploads/c50f33e0-665b-4906-a26e-7d18bc3b9c5e/2uzgvu618qxw-FabShopBay-Clutter.jpg" width="750" height="500">
   </div>
 </div>
 
-  
+</div> 
+
 <script>
 initComparisons();
 </script>
